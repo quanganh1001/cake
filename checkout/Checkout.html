@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="../checkout/Checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!-- Header ------------------------------------------------------------>
+    <header class="header">
+        <a href="../home/home.html" class="a-logo">
+            <img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="">
+            <h4>The Cake</h4>
+        </a>
+        
+        <nav class="a-navbar">
+            <a href="../home/home.html">Home</a>
+            <a href="../shop/shop.html">Products</a>
+            <a href="../About us/about.html">About us</a>
+            <a href="../contact/contact.html">Contact</a>
+            <a href="../policy/policy.html">Policy</a>
+        </nav>
+        
+        <div class="a-icons">
+            
+            <a href="../checkout/Checkout.html"><i id="cart-btn" class="fas fa-shopping-cart fa-2x a-btn"><span class="numbercart "></span></i></a>
+            
+            <i id="user" class="fa-solid fa-user fa-2x a-btn"></i>
+            <i id="menu-btn" class="fas fa-bars fa-2x a-btn"></i>
+        </div>
+
+        <div class="user">
+            <a href="../login/Login.html">Login</a>
+            <a href="../Register/register.html">Register</a>
+        </div>
+    </header>
+    <!-- section1 -->
+    <div class="t_container">
+        <div class="banner">
+            <h1>Checkout</h1>
+            <span><a href="../home/home.html" class="home">Home ></a><a class="home" href="../shop/shop.html">Shop ></a><a href="#">Checkout</a></span>
+        </div>
+    </div>
+
+
+
+    <!-- section2 -->
+    <div class="section2">
+        <h1>Your Cart</h1>
+        <table id="cart">
+            <thead>
+                <tr class="title-c">
+                    <th class="title-cart">Cake</th>
+                    <th class="title-cart">Price</th>
+                    <th class="title-cart">Quantity</th>
+                    <th class="title-cart">Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tbody>
+                <tr class="totalAll-cart">
+                    <th class="totalAll" ></th>
+                    <th class="totalAll" ></th>
+                    <th class="f-left bold totalAll">TOTAL</th>
+                    <th class="f-right bold totalAll" id="totalAll"></th>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+    <!-- section3 -->
+    <div class="t_container">
+
+        <div class="content">
+            <div class="coupon">
+                <i class="fa-sharp fa-regular fa-calendar" style="color: #6fded2;"></i>
+                <span>Have a coupon? 
+                    <span id="coupon">Click here to enter your code</span>
+                </span>
+            </div>
+            <div class="coupon_detail hidden">
+                <p>If you have a coupon code, please apply it below.</p>
+                <form class="submit" id="couponform">
+                    <input type="text" placeholder="Coupon Code" id="inputcoupon">
+                    <button type="submit" class="btn-submit" id="applycoupon"><b>Apply coupon</b></button>
+                </form>
+                <small id="couponErorr" class="smerror"></small>
+            </div>
+            <div class="success hidden">
+                <h1>Apply coupon successful !</h1>
+            </div>
+            <form action="#" method="post" id="myform">
+                <div class="main_content">
+                    <div class="bill">
+                        <h3>Billing details</h3>
+                        <div class="form">
+                            <div class="fname">
+                                <label for="fname">
+                                    First name
+                                    <span class="required" title="required">*</span>
+                                </label>
+                                <input type="text" id="fname" class="validate">
+                                <small id="fnameError" class="smerror"></small>
+                            </div>
+                            <div class="lname">
+                                <label for="lname">
+                                    Last name
+                                    <span class="required" title="required">*</span>
+                                </label>
+                                <input type="text" id="lname" class="validate">
+                                <small id="lnameError" class="smerror"></small>
+                            </div>
+                        </div>
+                        <div class="company ">
+                            <label for="country">
+                                City
+                                <span class="required" title="required">*</span>
+                            </label>
+                            <select id="country">
+                                <option value="">-Select-</option>
+                                <option class="country-option" value="Afghanistan">Hà Nội</option>
+                                <option class="country-option" value="Albania">Hồ Chí Minh</option>
+                                <option class="country-option" value="Algeria">Huế</option>
+                                <option class="country-option" value="American Samoa">Đà Nẵng</option>
+                                <option class="country-option" value="Argentina">Long An</option>
+                                <option class="country-option" value="Australia">Hải Phòng</option>
+                                <option class="country-option" value="Bahamas">Lạng Sơn</option>
+                                <option class="country-option" value="Bahrain">Ninh Bình</option>
+                                <option class="country-option" value="Belarus">Quảng Ninh</option>
+                                <option class="country-option" value="Belize">Nghệ An</option>
+                                <option class="country-option" value="Cambodia">Bình Dương</option>
+                                <option class="country-option" value="VietNam">Bắc Ninh</option>
+                            </select>
+                            <small id="countryError" class="smerror"></small>
+                        </div>
+                        <div class="company">
+                            <label for="street">
+                                Street address
+                                <span class="required" title="required">*</span>
+                            </label>
+                            <input type="text" id="street-house" placeholder="House number and street name" class="validate">
+                            <small id="streetError" class="smerror"></small>
+                        </div>
+                        <div class="company">
+                            <label for="Postcode">
+                                Postcode / ZIP
+                                <span class="required" title="required">*</span>
+                            </label>
+                            <input type="text" id="Postcode" class="validate">
+                            <small id="postError" class="smerror"></small>
+                        </div>
+                        
+                        <div class="company">
+                            <label for="Phone ">
+                                Phone 
+                                <span class="required" title="required">*</span>
+                            </label>
+                            <input type="phone" id="Phone " class="validate">
+                            <small id="phoneError" class="smerror"></small>
+                        </div>
+                        <div class="company">
+                            <label for="Email">
+                                Email address
+                                <span class="required" title="required">*</span>
+                            </label>
+                            <input type="text" id="Email" class="validate">
+                            <small id="emailError" class="smerror"></small>
+                        </div>
+                        <div class="company">
+                            <label for="mess">Note
+                            </label>
+                            <textarea id="mess" cols="30" rows="5"></textarea>
+                        </div>
+                        <!-- <div class="warning hidden">
+                            <h4 id="error"></h4>
+                        </div> -->
+                    </div>
+                    <div class="sidebar">
+                        <h3>Payments</h3>
+                        <div class="payment">
+                            <div class="method">
+                                <div class="payment_tick">
+                                    <input type="radio" id="bank" name="tick" checked>
+                                    <label for="bank">Direct bank transfer</label>
+                                </div>
+                                <div class="payment_text">
+                                    <p>Make your payment directly into our bank account. 
+                                    Please use your Order ID as the payment reference. 
+                                    Your order will not be shipped until the funds have cleared in our account.</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <div class="payment_tick">
+                                    <input type="radio" id="cash" name="tick">
+                                    <label for="cash">Cash on delivery</label>
+                                </div>
+                                <div class="payment_text hidden">
+                                    <p>Pay with cash upon delivery.</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <div class="payment_tick paypal">
+                                    <input type="radio" id="paypal" name="tick">
+                                    <label for="paypal">PayPal</label>
+                                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png" alt="PayPal acceptance mark" style="height: 20px;">
+                                </div>
+                                <div class="payment_text hidden">
+                                    <p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-submit" id="place_order"><p>Order</p></button>
+                        </div>  
+                    </div>
+                </div>           
+            </form>
+        </div>
+    </div>
+    
+
+
+
+    <!-- footer ------------------------------------------------------------>
+    <footer class="Footer">
+        <div class="container">
+            <div class="cot1">
+                <div class="title">
+                    <img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="" >
+                </div>
+                <div class="content">
+                    <span>Variety of Asian - European varieties: cakes, fresh bread, birthday cakes, events, seasonal</span>
+                </div>
+            </div>
+            <div class="cots">
+                <div class="cot">
+                    <div class="title">
+                        <h1>Work Times</h1>
+                    </div>
+                    <div class="content">
+                        <p>Our work timings:</p>
+                        <p>Mon. : Fri.: 8 am - 8 pm</p>
+                        <p>Sat. : 9am - 4pm</p>
+                        <p>Sun. : Closed</p>
+                    </div>
+                </div>
+
+                <div class="cot">
+                    <div class="title">
+                        <h1>Our Address</h1>
+                    </div>
+                    <div class="content">
+                        <p>The Cake</p>
+                        <p>No 8 Ton That Thuyet street, Bac Tu Liem, Ha Noi</p>
+                        <p>thecake@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="cot">
+                    <div class="title">
+                        <h1>Social network
+                        </h1>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #3a31efc6;"> </i> Facebook</a>
+                        <a href="#"><i class=" fa-2x fa-brands fa-instagram" style="color: #ff6d2e;"></i>  Instagram</a>
+                        <a href="https://www.youtube.com/watch?v=a3ICNMQW7Ok"><i class="fa-2x fa-brands fa-youtube" style="color: #d70f0f;"></i> Youtube</a>
+                        <a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #57e3ff;"></i> Twitter</a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>  
+        <div class="copyright">
+            <span>Copyright © 2023-Powered by The Cake</span>
+        </div>
+    </footer>
+    <script src="addtocart.js"></script>
+    <script src="../checkout/Checkout.js"></script>
+</body>
+</html>

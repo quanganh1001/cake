@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header ------------------------------------------------------------>
+    <header class="header">
+        <a href="../home/home.html" class="a-logo">
+            <img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="">
+            <h4>The Cake</h4>
+        </a>
+        
+        <nav class="a-navbar">
+            <a href="../home/home.html">Home</a>
+            <a href="../shop/shop.html">Products</a>
+            <a href="../About us/about.html">About us</a>
+            <a href="../contact/contact.html">Contact</a>
+            <a href="../policy/policy.html">Policy</a>
+        </nav>
+        
+        <div class="a-icons">
+            
+            <a href="../checkout/Checkout.html"><i id="cart-btn" class="fas fa-shopping-cart fa-2x a-btn"><span class="numbercart "></span></i></a>
+            <i id="user" class="fa-solid fa-user fa-2x a-btn"></i>
+            <i id="menu-btn" class="fas fa-bars fa-2x a-btn"></i>
+        </div>
+
+        <div class="user">
+            <a href="../login/Login.html">Login</a>
+            <a href="../Register/register.html">Register</a>
+        </div>
+    </header>
+
+
+
+    <!-- section 1 -->
+    <div class="section1">
+        <div class="a-content">
+            <h1>Contact us</h1>
+            <a href="../home/home.html">Home</a>
+            <span> > Contact us</span>
+        </div>
+    </div>
+
+    <!-- send feedback -->
+    <div class="send">
+        <h1>Get in touch</h1>
+        <form action="" id="myform">
+            <label for="name">Your Name</label>
+            <input class="ip" type="text" id="name">
+            <small id="nameError" class="smerror"></small>
+
+            <label for="phone">Your Phone</label>
+            <input class="ip" type="text" id="phone">
+            <small id="phoneError" class="smerror"></small>
+            
+            <label for="email">Your Email</label>
+            <input class="ip" type="text" id="email">
+            <small id="emailError" class="smerror"></small>
+            
+            <label for="mess">Your Message</label>
+            <textarea class="ip" name="" id="mess" cols="30" rows="10"></textarea>
+            <small id="messError" class="smerror"></small>
+            
+            <div><input type="submit" id="sendfb" value="Send Feedback"></div>
+        </form>
+    </div>
+
+    <!-- section 2 -->
+    <div class="section2">
+        <div class="item item1">
+            <h1>Pitch Us</h1>
+            <p>Hello,</p>
+            <p>If you have a request to exchange, please send a letter to our email address</p>
+            <input type="button" onclick = "sendEmail()" value="Send mail">
+        </div>
+        
+        <div class="item item3">
+            <h1>Our Social Network</h1>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #3a31efc6;"> </i> Facebook</a>
+                <a href="#"><i class=" fa-2x fa-brands fa-instagram" style="color: #ff6d2e;"></i>  Instagram</a>
+                <a href="https://www.youtube.com/watch?v=a3ICNMQW7Ok"><i class="fa-2x fa-brands fa-youtube" style="color: #d70f0f;"></i> Youtube</a>
+                <a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #57e3ff;"></i> Twitter</a>
+            </div>
+        </div>
+
+        <div class="item item2">
+            <h1>Meet Us</h1>
+            <div>
+                <i class="fa-solid fa-phone fa-1x"></i>
+                <span>+40724343949</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span> thecake@gmail.com</span> 
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"> </i>
+                <span> No. 8, Ton That Tuyet, My Dinh, Tu Liem, Hanoi</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- map -->
+    <div class="Q-container">
+        <div id="map"></div>
+        <!-- <div class="header">
+          <div class="content">
+              <strong>The Cake</strong>
+              <p>FPT Aptech Hà Nội -Tôn Thất Thuyết, My Dinh 2, Nam Từ Liêm, Hanoi</p>
+              <a href="https://www.google.com/maps/place/FPT+Aptech+H%C3%A0+N%E1%BB%99i+-+H%E1%BB%87+Th%E1%BB%91ng+%C4%90%C3%A0o+T%E1%BA%A1o+L%E1%BA%ADp+Tr%C3%ACnh+Vi%C3%AAn+Qu%E1%BB%91c+T%E1%BA%BF+(Since+1999)/@21.0288251,105.7797218,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab86cece9ac1:0xa9bc04e04602dd85!8m2!3d21.0288201!4d105.7822967!16s%2Fg%2F11nxqg5ht7">Xem bản đồ lớn hơn</a>
+          </div>
+          <div class="icon">
+              <a href="https://www.google.com/maps/place/FPT+Aptech+H%C3%A0+N%E1%BB%99i+-+H%E1%BB%87+Th%E1%BB%91ng+%C4%90%C3%A0o+T%E1%BA%A1o+L%E1%BA%ADp+Tr%C3%ACnh+Vi%C3%AAn+Qu%E1%BB%91c+T%E1%BA%BF+(Since+1999)/@21.0288251,105.7797218,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab86cece9ac1:0xa9bc04e04602dd85!8m2!3d21.0288201!4d105.7822967!16s%2Fg%2F11nxqg5ht7"><i class="fa-solid fa-diamond-turn-right fa-3x" ></i></a>
+              <a href="https://www.google.com/maps/place/FPT+Aptech+H%C3%A0+N%E1%BB%99i+-+H%E1%BB%87+Th%E1%BB%91ng+%C4%90%C3%A0o+T%E1%BA%A1o+L%E1%BA%ADp+Tr%C3%ACnh+Vi%C3%AAn+Qu%E1%BB%91c+T%E1%BA%BF+(Since+1999)/@21.0288201,105.7822967,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab86cece9ac1:0xa9bc04e04602dd85!8m2!3d21.0288201!4d105.7822967!16s%2Fg%2F11nxqg5ht7" class="tooltip"  title="Nhận chỉ đường đến vị trí này trên Google Maps.">Chỉ Đường</a>
+          </div>
+        </div>   -->
+      </div>
+        
+    <!-- footer ------------------------------------------------------------>
+    <footer class="Footer">
+        <div class="container">
+            <div class="cot1">
+                <div class="title">
+                    <img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="" >
+                </div>
+                <div class="content">
+                    <span>Variety of Asian - European varieties: cakes, fresh bread, birthday cakes, events, seasonal</span>
+                </div>
+            </div>
+            <div class="cots">
+                <div class="cot">
+                    <div class="title">
+                        <h1>Work Times</h1>
+                    </div>
+                    <div class="content">
+                        <p>Our work timings:</p>
+                        <p>Mon. : Fri.: 8 am - 8 pm</p>
+                        <p>Sat. : 9am - 4pm</p>
+                        <p>Sun. : Closed</p>
+                    </div>
+                </div>
+
+                <div class="cot">
+                    <div class="title">
+                        <h1>Our Address</h1>
+                    </div>
+                    <div class="content">
+                        <p>The Cake</p>
+                        <p>No 8 Ton That Thuyet street, Bac Tu Liem, Ha Noi</p>
+                        <p>thecake@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="cot">
+                    <div class="title">
+                        <h1>Social network
+                        </h1>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #3a31efc6;"> </i> Facebook</a>
+                        <a href="#"><i class=" fa-2x fa-brands fa-instagram" style="color: #ff6d2e;"></i>  Instagram</a>
+                        <a href="https://www.youtube.com/watch?v=a3ICNMQW7Ok"><i class="fa-2x fa-brands fa-youtube" style="color: #d70f0f;"></i> Youtube</a>
+                        <a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #57e3ff;"></i> Twitter</a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>  
+        <div class="copyright">
+            <span>Copyright © 2023-Powered by The Cake</span>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+        
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMAr6IOhukiDWPFkgUOrSLGKiiKhr2Yuo&callback=initMap"></script>
+</body>
+</html>

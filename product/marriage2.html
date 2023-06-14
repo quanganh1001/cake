@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage 2</title>
+    <link rel="stylesheet" href="../product/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .t-container .big-img{
+            background: url('../image/marriage2.jpeg');
+        } 
+    </style>
+</head>
+<body>
+<!-- Header ------------------------------------------------------------>
+<header class="header">
+    <a href="../home/home.html" class="a-logo">
+        <img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="">
+        <h4>The Cake</h4>
+    </a>
+    
+    <nav class="a-navbar">
+        <a href="../home/home.html">Home</a>
+        <a href="../shop/shop.html">Products</a>
+        <a href="../About us/about.html">About us</a>
+        <a href="../contact/contact.html">Contact</a>
+        <a href="../policy/policy.html">Policy</a>
+    </nav>
+    
+    <div class="a-icons">
+        
+        <a href="../checkout/Checkout.html"><i id="cart-btn" class="fas fa-shopping-cart fa-2x a-btn"><span class="numbercart "></span></i></a>
+        <i id="user" class="fa-solid fa-user fa-2x a-btn"></i>
+        <i id="menu-btn" class="fas fa-bars fa-2x a-btn"></i>
+    </div>
+
+    <div class="user">
+        <a href="../login/Login.html">Login</a>
+        <a href="../Register/register.html">Register</a>
+    </div>
+</header>
+
+
+    <div class="t-container">
+        <div class="fullscreen_img hidden">
+            <div class="overlay"></div>
+            <div class="img">
+                <img src="../image/marriage2.jpeg">
+            </div>
+        </div>
+        <div class="head">
+            <div class="title">
+                <h1>Marriage 1</h1>
+                <span><a href="../home/home.html">Home</a> <span class="ic">></span> <a href="../shop/shop.html">Products</a> <span class="ic">></span> <a href="#">Marriage 2</a></span>
+            </div>
+        </div>
+        <div class="body_content">
+            <div class="content">
+                <div class="img">
+                    <div class="big-img zoom" onmousemove="zoom(event)" ontouchmove="zoom(event)">
+                        <img class="main-img" src="../image/marriage2.jpeg">
+                        <div class="loop">
+                            <img src="../image/search.svg">
+                        </div>
+                    </div>
+                    <div class="small-img">
+                        <img id="img_name" src="../image/marriage2.jpeg" class="opa">
+                        <img src="../image/marriage2-mini1.jpg" class="opa">
+                        <img src="../image/marriage2-mini2.jpg">
+                    </div>
+                </div>
+                <div class="about">
+                    <p class="name-pr" id="name-pr">Marriage 2</p>
+                    <h2 class="price-pr" id="price-pr">$10.00</h2>
+                    <span class="quantity">
+                        <div class="buttons_added">
+                            <input class="minus is-form" type="button" value="-" onclick="handleMinus()">
+                            <input id="quantity-pr" aria-label="quantity" class="input-qty" max="20" min="1" name="" type="number" value="1">
+                            <input class="plus is-form" type="button" value="+" onclick="handlePlus()">
+                        </div>
+                        <button class="btn-add" id="btn-add" onclick="sendData()">Add to cart</button>
+                    </span>
+                    <p>
+                        Category: Marriage 
+                        <br/>
+                        Toppings: Cream, White Fondant Flower, & Gold Edible Pearls
+                    </p>
+                </div>
+            </div>
+            <div class="description">
+                <div class="btn">
+                    <button class="btn-des active" > Description </button>
+                    <button class="btn-rev" > Reviews (0) </button>
+                </div>
+                <div class="des show">
+                    <h2>Description</h2>
+                    <p>Add a Joyous Anniversary Celebration to your After Marriage Funny Moments Album. The Relation of a Husband & Wife is Unique and full of Fun, just like the depiction on this Cake. Not So Happy Ever After Cake is Cute Cake that shows the Poor Hubby Hanging on the edge of the bed. This is Funny yet Awesome Moment to Celebrate on Anniversary. Order this Classic piece in 2kg or above to make the event a memorable one.</p>
+                </div>
+                <div class="review hidden">
+                    <h2>Reviews</h2>
+                    <p>There are no reviews yet.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="another-product">
+                <h2>Related products</h2>
+                <div class="product">
+                    <img src="../image/marriage1.jpeg">
+                    <h3>Marriage 1</h3>
+                    <p>Toppings: Cream, Chocolate, Pineapple, Almonds, Silver Pearls & Cherry Garnish
+                    </p>
+                    <strong>$3.00</strong>
+                    <a href="../product/marriage1.html"><button class="btn-add">Detail</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../product/product.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../product/addtocart.js"></script>
+</body>
+</html>

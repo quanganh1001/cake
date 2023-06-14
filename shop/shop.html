@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All product</title>
+    <link rel="stylesheet" href="../shop/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="zoomimg">
+        <div class="overlay"></div>
+        <div class="img" id="loopImg">
+            <!-- <img src="image/1415240322-6-banh-me-man-gioi-tre-ha-thanh-1-removebg-preview.png" alt=""> -->
+        </div>
+        
+    </div>
+</div>
+
+<!-- Header ------------------------------------------------------------>
+<header class="header">
+    <a href="../home/home.html" class="a-logo">
+        <img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="">
+        <h4>The Cake</h4>
+    </a>
+    
+    <nav class="a-navbar">
+        <a href="../home/home.html">Home</a>
+        <a href="../shop/shop.html">Products</a>
+        <a href="../About us/about.html">About us</a>
+        <a href="../contact/contact.html">Contact</a>
+        <a href="../policy/policy.html">Policy</a>
+    </nav>
+    
+    <div class="a-icons">
+        <a href="../checkout/Checkout.html"><i id="cart-btn" class="fas fa-shopping-cart fa-2x a-btn"><span class="numbercart "></span></i></a>
+        <i id="user" class="fa-solid fa-user fa-2x a-btn"></i>
+        <i id="menu-btn" class="fas fa-bars fa-2x a-btn"></i>
+    </div>
+
+    <div class="user">
+        <a href="../login/Login.html">Login</a>
+        <a href="../Register/register.html">Register</a>
+    </div>
+</header>
+
+<!-- section1 ------------------------------------------------------------>
+<div class="section1">
+    <div class="a-content">
+        <h1>Products</h1>
+        <a href="../home/home.html">Home</a>
+        <span> > Products</span>
+    </div>
+</div>
+
+<!-- section 2 ------------------------------------------------------------>
+<section class="section2">
+    <div class="a-container">
+        <div class="a-listproduct">
+            
+            <div class="a-filter">
+                <button class="a-btn-filter">Filter</button>
+                <div class="positon"> 
+                    <div class="a-categories ">
+                        <button class="a-btn-categories" type="all" id="all">All cakes</button>
+                        <button class="a-btn-categories" type="birthday" id="birthday">Birthday</button>
+                        <button class="a-btn-categories" type="anniversary" id="anniversary">Anniversary</button>
+                        <button class="a-btn-categories" type="engagement" id="engagement">Engagement</button>
+                        <button class="a-btn-categories" type="marriage" id="marriage">Marriage and so on</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sort">
+            <select name="sort" id="sort">
+                    <option value="">---Sort By---</option>
+                    <option value="price-l">Sort by Price: Low - Hight</option>
+                    <option value="price-h">Sort by Price: Hight - Low</option>
+                    <option value="name-az">Sort by Name A-Z: </option>
+                    <option value="name-za">Sort by Name Z-A: </option>
+            </select>
+            </div>
+            <ul class="a-products" id="a-products"> 
+                <!-- <li class="a-item" type="birthday">
+                    <img src="image/product-02.jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product b</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>$4</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li>
+                <li class="a-item" type="anniversary">
+                    <img src="image/product-03.jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product d</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>$6</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li>
+                <li class="a-item" type="engagement">
+                    <img src="image/product-04 (1).jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product j</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>1$</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li>
+                <li class="a-item" type="marriage">
+                    <img src="image/product-05.jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product t</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>$3</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li>
+                <li class="a-item" type="birthday">
+                    <img src="image/product-06 (1).jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product o</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>$8</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li>
+                <li class="a-item" type="anniversary">
+                    <img src="image/product-07.jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product s</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>$5</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li>
+                <li class="a-item" type="engagement">
+                    <img src="image/product-08.jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product b</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>$10</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li>
+                <li class="a-item" type="marriage">
+                    <img src="image/product-09.jpg" width="100%" alt="a">
+                    <h3 class="name-product">Product e</h3>
+                    <span>Our flavors & ingredients to build our local burgers.</span>
+                    <h4>$9</h4>
+                    <div><button id="btn-order">Buy Now</button></div>
+                    <div class="loop">
+                        <img src="image/src/img/search.svg">
+                    </div>
+                </li> -->
+            </ul>
+            
+        </div>
+        <div class="a-info">
+            <div class="a-content">
+                <h2>ABOUT US</h2>
+                <hr id="a-hr1"   style="border-color: black; width: 100%;">
+                <span>With the spirit of creativity and passion, we are constantly looking for new trends and developments to bring our customers exciting and special experiences..</span>
+
+                <h2 id="h2">OUR GUARANTEE</h2>
+                <hr id="a-hr2"   style="border-color: black; width: 100%;">
+                <span>We are committed to using fresh and selected ingredients, ensuring that each cake is created to the highest quality standards.</br>
+                We put our customers first and are committed to absolute satisfaction. If a customer is not satisfied with our product, we are willing to work with them to find a reasonable solution.</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer ------------------------------------------------------------>
+<footer class="Footer">
+    <div class="container">
+        <div class="cot1">
+            <div class="title">
+                <img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="" >
+            </div>
+            <div class="content">
+                <span>Variety of Asian - European varieties: cakes, fresh bread, birthday cakes, events, seasonal</span>
+            </div>
+        </div>
+        <div class="cots">
+            <div class="cot">
+                <div class="title">
+                    <h1>Work Times</h1>
+                </div>
+                <div class="content">
+                    <p>Our work timings:</p>
+                    <p>Mon. : Fri.: 8 am - 8 pm</p>
+                    <p>Sat. : 9am - 4pm</p>
+                    <p>Sun. : Closed</p>
+                </div>
+            </div>
+
+            <div class="cot">
+                <div class="title">
+                    <h1>Our Address</h1>
+                </div>
+                <div class="content">
+                    <p>The Cake</p>
+                    <p>No 8 Ton That Thuyet street, Bac Tu Liem, Ha Noi</p>
+                    <p>thecake@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="cot">
+                <div class="title">
+                    <h1>Social network
+                    </h1>
+                </div>
+                <div class="content">
+                    <a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #3a31efc6;"> </i> Facebook</a>
+                    <a href="#"><i class=" fa-2x fa-brands fa-instagram" style="color: #ff6d2e;"></i>  Instagram</a>
+                    <a href="https://www.youtube.com/watch?v=a3ICNMQW7Ok"><i class="fa-2x fa-brands fa-youtube" style="color: #d70f0f;"></i> Youtube</a>
+                    <a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #57e3ff;"></i> Twitter</a>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>  
+    <div class="copyright">
+        <span>Copyright © 2023-Powered by The Cake</span>
+    </div>
+</footer>
+<script src="../shop/shop.js"></script>
+</body>
+</html>

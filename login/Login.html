@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Login</title>
+	<link rel="stylesheet" href="../login/Login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Header ------------------------------------------------------------>
+<header class="header">
+	<a href="../home/home.html" class="a-logo">
+		<img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="">
+		<h4>The Cake</h4>
+	</a>
+	
+	<nav class="a-navbar">
+		<a href="../home/home.html">Home</a>
+		<a href="../shop/shop.html">Products</a>
+		<a href="../About us/about.html">About us</a>
+		<a href="../contact/contact.html">Contact</a>
+	</nav>
+	
+	<div class="a-icons">
+		
+		<a href="../checkout/Checkout.html"><i id="cart-btn" class="fas fa-shopping-cart fa-2x a-btn"><span class="numbercart "></span></i></a>
+		<i id="user" class="fa-solid fa-user fa-2x a-btn"></i>
+		<i id="menu-btn" class="fas fa-bars fa-2x a-btn"></i>
+	</div>
+
+	<div class="user">
+		<a href="../login/Login.html">Login</a>
+		<a href="../Register/register.html">Register</a>
+	</div>
+</header>
+
+<!-- section 1 -->
+<!-- forget -->
+
+<div class="wrapper" id="warapper">
+	<div class="bg" id="bg">
+		<div class="overlay" id="overlay"></div>
+		<div class="coupon_detail">
+			<p>If you forgot your password, enter your registered Email/Phone, we will resend your login password with.</p>
+			<form class="submit" id="couponform">
+				<input type="text" placeholder="Coupon Code" id="inputcoupon">
+				<button type="submit" class="btn-submit"><b>Send</b></button>
+			</form>
+			<div class="success hidden">
+				<h1>Send new password successful !</h1>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div class="Q-Login">
+	
+
+	<div class="Login">
+		<h1>Login</h1>
+		<form id="myform" action="">
+			<div class="username">
+				<!-- <label for="us">User Name</label> -->
+				<input id="us" type="text" placeholder="User Name" >
+				<small id="usError" class="smerror"></small>
+			</div>
+			<div  class="password">
+				<!-- <label for="pass">Password</label> -->
+				<input id="pass" type="password"  placeholder="Password">
+				<small id="passError" class="smerror"></small>
+			</div>
+			<span id="forgot" class="forgot">Forgot your password?</span>
+			<!-- <div class="warning hidden" >
+				<span id="error"></span>
+			</div> -->
+			<div class="button">
+				<button type="submit" class="btn-login">Login</button>
+			</div>
+		</form>
+		<div class="res">
+			<span>Do not have an account? <a href="../Register/register.html"> Register now</a></span>
+			<p>Or sign up use</p>
+			<div class="icon">
+				<a href="#"><i class="fa-brands fa-square-facebook" style="color: #5b90ec;"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter" style="color: #4fb4f3;"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram" style="color: #ec3232;"></i></a>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+<!-- footer ------------------------------------------------------------>
+<footer class="Footer">
+	<div class="container">
+		<div class="cot1">
+			<div class="title">
+				<img src="../image/png-transparent-bakery-freshly-baked-illustration-bakery-logo-cupcake-bread-bakery-logo-free-logo-design-template-food-label-thumbnail-removebg-preview.png" alt="" >
+			</div>
+			<div class="content">
+				<span>Variety of Asian - European varieties: cakes, fresh bread, birthday cakes, events, seasonal</span>
+			</div>
+		</div>
+		<div class="cots">
+			<div class="cot">
+				<div class="title">
+					<h1>Work Times</h1>
+				</div>
+				<div class="content">
+					<p>Our work timings:</p>
+					<p>Mon. : Fri.: 8 am - 8 pm</p>
+					<p>Sat. : 9am - 4pm</p>
+					<p>Sun. : Closed</p>
+				</div>
+			</div>
+
+			<div class="cot">
+				<div class="title">
+					<h1>Our Address</h1>
+				</div>
+				<div class="content">
+					<p>The Cake</p>
+					<p>No 8 Ton That Thuyet street, Bac Tu Liem, Ha Noi</p>
+					<p>thecake@gmail.com</p>
+				</div>
+			</div>
+
+			<div class="cot">
+				<div class="title">
+					<h1>Social network
+					</h1>
+				</div>
+				<div class="content">
+					<a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #3a31efc6;"> </i> Facebook</a>
+					<a href="#"><i class=" fa-2x fa-brands fa-instagram" style="color: #ff6d2e;"></i>  Instagram</a>
+					<a href="https://www.youtube.com/watch?v=a3ICNMQW7Ok"><i class="fa-2x fa-brands fa-youtube" style="color: #d70f0f;"></i> Youtube</a>
+					<a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #57e3ff;"></i> Twitter</a>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>  
+	<div class="copyright">
+		<span>Copyright © 2023-Powered by The Cake</span>
+	</div>
+</footer>
+
+
+<script src="login.js"></script>
+</body>
+</html>
