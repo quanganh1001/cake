@@ -137,7 +137,7 @@ header.sticky{
 
 /* section1  ----------------------------------------------------------------*/
 .section1{
-    background-image: url('../image/1000_F_590253186_ab4I62EFj7xM7AqzHfFy4djG7gGZJrwL.jpg');
+    background-image: url('image/1000_F_590253186_ab4I62EFj7xM7AqzHfFy4djG7gGZJrwL.jpg');
     background-size: cover;
     height: 90vh;
     background-size:cover;
@@ -190,7 +190,7 @@ header.sticky{
 
 /* section 2 */
 .section2 {
-  background-image: url('../image/1000_F_267953032_W7ijdzUKas9zoqahdkbgEU2dna6lM3pj.jpg');
+  background-image: url('image/1000_F_267953032_W7ijdzUKas9zoqahdkbgEU2dna6lM3pj.jpg');
   /* height: 200px; */
   width: 100%;
   background-position: center center;
@@ -353,7 +353,7 @@ header.sticky{
 
 /* section 4 ----------------------------------------------------------------*/
 .H-Section4{
-    background-image: url('../image/spl_bg.jpg');
+    background-image: url('image/spl_bg.jpg');
     width: 100%;
     height: 70vh;
     background-size: cover;
@@ -424,7 +424,7 @@ header.sticky{
 
 .section5{
     text-align: center;
-    background-image: url('../image/pattern-a.png');
+    background-image: url('image/pattern-a.png');
     padding: 45px 0px 80px 0px;
     overflow: hidden;
 }
@@ -522,7 +522,7 @@ header.sticky{
 .section6{
     justify-content: center;
     text-align: center;
-    background: url(../image/chef_bg.jpg) no-repeat;
+    background: url(image/chef_bg.jpg) no-repeat;
     background-size: cover;
     min-height: 250px;
     display: flex;
@@ -729,7 +729,7 @@ header.sticky{
 }
 /* section 7 ----------------------------------------------------------------*/
 .Section7 {
-	background-image: url('../image/video_bg.jpg');
+	background-image: url('image/video_bg.jpg');
 	background-size: cover;
 	height: 80vh;
 	position: relative;
@@ -784,7 +784,7 @@ header.sticky{
 
 /* footer  ----------------------------------------------------------------*/
 .Footer{
-	background-image: url('../image/footer_bg.jpg');
+	background-image: url('image/footer_bg.jpg');
 	background-size: cover;
 	/* height: 70vh; */
     display: flex;

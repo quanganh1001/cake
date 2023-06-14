@@ -69,7 +69,7 @@ form.addEventListener("submit", function(event) {
 
 	
     alert("Login Success");
-    window.location.href = "../home/home.html";	
+    window.location.href = "../index.html";	
   });
 
 
